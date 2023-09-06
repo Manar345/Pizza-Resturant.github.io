@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="./normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Nothing+You+Could+Do&display=swap"
       rel="stylesheet"
     />
     <script
@@ -76,6 +78,112 @@
         </div>
       </nav>
     </header>
+    <section class="land">
+      <div
+        id="carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-pause="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouse"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slid-img">
+              <div class="overlay"></div>
+            </div>
+            <div
+              class="slid-content row justify-content-center align-content-center"
+            >
+              <div class="col-md-6 col-12 text-center text-white">
+                <span class="d-block subhead">Wlecome</span>
+                <h1>We cooked your desired Pizza Recipe</h1>
+                <p style="font-size: 1.3em" class="opacity-75">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+                <p class="buttons">
+                  <a href="#" class="btn m-2 rounded-0 order">Order Now</a>
+                  <a href="#" class="btn m-2 rounded-0 view">View Menu</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slid-img">
+              <div class="overlay"></div>
+            </div>
+            <div
+              class="slid-content row justify-content-center align-content-center"
+            >
+              <div
+                class="slid-text col-md-6 col-12 text-lg-end text-center text-white my-3"
+              >
+                <span class="d-block subhead">Crunchy</span>
+                <h1>Italian Pizza</h1>
+                <p style="font-size: 1.3em" class="opacity-75">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+                <p class="buttons justify-content-lg-end">
+                  <a href="#" class="btn m-2 rounded-0 order">Order Now</a>
+                  <a href="#" class="btn m-2 rounded-0 view">View Menu</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-sm-6 col-10 justify-content-center">
+                <img src="./imgs/bg_2.png.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slid-img">
+              <div class="overlay"></div>
+            </div>
+            <div
+              class="slid-content row justify-content-center align-content-center"
+            >
+              <div class="col-md-4 col-sm-6 col-10 justify-content-center">
+                <img src="./imgs/pizza_1.png.webp" alt="" />
+              </div>
+              <div
+                class="col-md-6 col-12 text-lg-start text-center text-white slid-text my-3"
+              >
+                <span class="d-block subhead">Delicious</span>
+                <h1>Italian Cuizine</h1>
+                <p style="font-size: 1.3em" class="opacity-75">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+                <p class="buttons justify-content-lg-start">
+                  <a href="#" class="btn m-2 rounded-0 order">Order Now</a>
+                  <a href="#" class="btn m-2 rounded-0 view">View Menu</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./bootstrap.bundle.min.js"></script>
   </body>
 </html>
