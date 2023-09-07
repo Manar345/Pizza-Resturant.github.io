@@ -20,9 +20,10 @@
     <title>Pizza Delicious</title>
   </head>
   <body>
+    <!-- header & navigation bar===================== -->
     <header>
       <nav
-        class="navbar bg-body-tertiary navbar-expand-lg navbar-dark bg-dark navy"
+        class="navbar fixed-top bg-body-tertiary navbar-expand-lg navbar-dark bg-dark navy"
       >
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -62,22 +63,26 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <!-- Landing section ========================== -->
     <section class="land">
       <div
         id="carousel"
@@ -162,11 +167,13 @@
             <div
               class="slid-content row justify-content-center align-content-center"
             >
-              <div class="col-md-4 col-sm-6 col-10 justify-content-center">
+              <div
+                class="col-md-4 col-sm-6 col-10 order-2 order-md-1 justify-content-center"
+              >
                 <img src="./imgs/pizza_1.png.webp" alt="" />
               </div>
               <div
-                class="col-md-6 col-12 text-lg-start text-center text-white slid-text my-3"
+                class="col-md-6 col-12 order-md-2 order-1 text-lg-start text-center text-white slid-text my-3"
               >
                 <span class="d-block subhead">Delicious</span>
                 <h1>Italian Cuizine</h1>
@@ -184,6 +191,103 @@
         </div>
       </div>
     </section>
+    <!-- about section================================= -->
+    <div class="social">
+      <div class="container-fluid">
+        <div class="row text-white justify-content-center">
+          <div class="col-sm-3">
+            <div class="sicon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <p class="mb-0">+000 (123) 456 789</p>
+              <p class="opacity-50">A small river named Duden flows</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="sicon"><i class="fa-solid fa-location"></i></div>
+            <div>
+              <p class="mb-0">198 west 21th Street</p>
+              <p class="opacity-50">Suite 721 New York NY 10016</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="sicon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <p class="mb-0">Open Monday-Friday</p>
+              <p class="opacity-50">8.00am - 9.00pm</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 p-0 order-2 order-md-1">
+          <img class="w-100 h-100" src="./imgs/about.jpg.webp" alt="" />
+        </div>
+        <div class="Atext col-md-6 text-white p-5 order-1 order-md-2">
+          <h3 class="mb-3">
+            WELCOME TO
+            <span><i class="fa-solid fa-pizza-slice"></i>PIZZA</span> RESTAURANT
+          </h3>
+          <p class="opacity-75">
+            On her way she met a copy. The copy warned the Little Blind Text,
+            that where it came from it would have been rewritten a thousand
+            times and everything that was left from its origin would be the word
+            "and" and the Little Blind Text should turn around and return to its
+            own, safe country. But nothing the copy said could convince her and
+            so it didn’t take long until a few insidious Copy Writers ambushed
+            her, made her drunk with Longe and Parole and dragged her into their
+            agency, where they abused her for their.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- services section ======================================= -->
+    <section id="services">
+      <div class="container p-5">
+        <div class="row my-3 text-center justify-content-center">
+          <div class="col-md-8">
+            <h3>Our Services</h3>
+            <p class="opacity-75">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col-md-4 serv">
+            <div><i class="fa-solid fa-bowl-food"></i></div>
+            <h4>Healthy Food</h4>
+            <p class="opacity-75">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+          <div class="col-md-4 serv">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <h4>Fast Delivery</h4>
+            <p class="opacity-75">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+          <div class="col-md-4 serv">
+            <div><i class="fa-solid fa-pizza-slice"></i></div>
+            <h4>Organic Recipes</h4>
+            <p class="opacity-75">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- meals section================================================= -->
     <script src="./bootstrap.bundle.min.js"></script>
   </body>
 </html>

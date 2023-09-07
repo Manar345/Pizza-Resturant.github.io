@@ -117,22 +117,26 @@ body {
   display: flex;
   justify-content: center;
 }
-.slid-content .buttons a {
+.buttons a {
   display: block;
   padding: 10px;
   font-size: 0.8rem;
-  border: 2px solid var(--scnd-clr);
   transition: 0.5s;
 }
-.slid-content .buttons .order,
-.slid-content .buttons .view:hover,
-.slid-content .buttons .view:focus {
+.buttons .view {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.buttons .order,
+.buttons .view:hover,
+.buttons .view:focus {
   color: #000;
   background-color: var(--scnd-clr);
+  border: 2px solid var(--scnd-clr);
 }
-.slid-content .buttons .view,
-.slid-content .buttons .order:hover,
-.slid-content .buttons .order:focus {
+.buttons .order:hover,
+.buttons .order:focus {
   color: var(--scnd-clr);
   background-color: transparent;
 }
@@ -142,3 +146,103 @@ body {
 .slid-content .col-10 img {
   width: 100%;
 }
+/*------------------------------------------------------------------------*/
+.social {
+  background: #000;
+}
+.social .col-sm-3 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.social .col-sm-3:last-child {
+  background-color: var(--scnd-clr);
+  justify-content: flex-start;
+  align-items: center;
+}
+.social .col-sm-3 i {
+  margin: 10px;
+  font-size: large;
+}
+.sicon i {
+  color: var(--scnd-clr);
+  transition: 1s ease;
+}
+.social .col-sm-3:hover .sicon i {
+  transform: rotate(1turn);
+}
+@media (max-width: 576px) {
+  .social .col-sm-3 {
+    padding: 5px;
+    justify-content: center;
+  }
+  .social .col-sm-3:last-child {
+    justify-content: center;
+  }
+}
+/*-------------------------------------------------------------------------*/
+#about div h3 span {
+  color: var(--scnd-clr);
+}
+#about div h3 span i {
+  margin: 2px;
+  transform: rotate(165deg);
+}
+#about .Atext {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/*-------------------------------------------------------------------------*/
+#services {
+  color: #000;
+  background-image: url(./imgs/food.png.webp);
+  background-size: contain;
+}
+#services .row h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--basic-clr);
+}
+.serv {
+  text-align: center;
+}
+.serv div i {
+  padding: 15px;
+  font-size: 2.5rem;
+  margin: 10px;
+  position: relative;
+  color: #352c10;
+  z-index: 2;
+}
+.serv div i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: transparent;
+  border: 1px solid rgba(53, 44, 16, 0.5);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+.serv:hover div i {
+  color: var(--basic-clr);
+}
+.serv:hover div i::after {
+  transform: rotate(135deg);
+  background-color: rgb(255, 208, 0);
+  border-color: var(--scnd-clr);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.serv h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 10px 0px;
+}
+.serv p {
+  font-size: 1rem;
+}
+/*-------------------------------------------------------------------------*/
