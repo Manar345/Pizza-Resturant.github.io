@@ -123,20 +123,20 @@ body {
   font-size: 0.8rem;
   transition: 0.5s;
 }
-.buttons .view {
+.view {
   color: #fff;
   border: 2px solid #fff;
   background-color: transparent;
 }
-.buttons .order,
-.buttons .view:hover,
-.buttons .view:focus {
+.order,
+.view:hover,
+.view:focus {
   color: #000;
   background-color: var(--scnd-clr);
   border: 2px solid var(--scnd-clr);
 }
-.buttons .order:hover,
-.buttons .order:focus {
+.order:hover,
+.order:focus {
   color: var(--scnd-clr);
   background-color: transparent;
 }
@@ -160,9 +160,17 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+.social .col-sm-3:last-child i {
+  padding: 5px;
+  transition: 0.3s;
+}
+.social .col-sm-3:last-child i:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 .social .col-sm-3 i {
-  margin: 10px;
-  font-size: large;
+  margin: 15px;
+  font-size: larger;
 }
 .sicon i {
   color: var(--scnd-clr);
@@ -233,7 +241,7 @@ body {
 }
 .serv:hover div i::after {
   transform: rotate(135deg);
-  background-color: rgb(255, 208, 0);
+  background-color: var(--scnd-clr);
   border-color: var(--scnd-clr);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -244,5 +252,37 @@ body {
 }
 .serv p {
   font-size: 1rem;
+}
+/*-------------------------------------------------------------------------*/
+.meals .row h3 {
+  text-transform: uppercase;
+}
+.meal {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 10px;
+}
+.meal > div {
+  width: 50%;
+  height: 100%;
+}
+.Mtext {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.Mtext p {
+  opacity: 0.75;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.Mtext span {
+  color: var(--scnd-clr);
+}
+.Mtext span a {
+  margin: 0px 7px;
 }
 /*-------------------------------------------------------------------------*/
