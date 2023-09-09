@@ -109,7 +109,6 @@ body {
 }
 .slid-content h1 {
   font-size: 2.3rem !important;
-  font-weight: 400 !important;
   margin: 7px !important;
   text-transform: uppercase;
 }
@@ -146,6 +145,11 @@ body {
 .slid-content .col-10 img {
   width: 100%;
 }
+@media (max-width: 576px) {
+  .slid-content h1 {
+    font-size: 1.5rem !important;
+  }
+}
 /*------------------------------------------------------------------------*/
 .social {
   background: #000;
@@ -153,11 +157,10 @@ body {
 .social .col-sm-3 {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 35px 5px;
 }
 .social .col-sm-3:last-child {
   background-color: var(--scnd-clr);
-  justify-content: flex-start;
   align-items: center;
 }
 .social .col-sm-3:last-child i {
@@ -181,12 +184,14 @@ body {
 }
 @media (max-width: 576px) {
   .social .col-sm-3 {
-    padding: 5px;
-    justify-content: center;
+    justify-content: flex-start;
   }
-  .social .col-sm-3:last-child {
-    justify-content: center;
+  .social .col-sm-3:first-child {
+    padding-top: 20px;
   }
+  /* .social .col-sm-3:last-child {
+    justify-content: center;
+  } */
 }
 /*-------------------------------------------------------------------------*/
 #about div h3 span {
@@ -234,7 +239,7 @@ body {
   background-color: transparent;
   border: 1px solid rgba(53, 44, 16, 0.5);
   border-radius: 2px;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 .serv:hover div i {
   color: var(--basic-clr);
@@ -254,18 +259,17 @@ body {
   font-size: 1rem;
 }
 /*-------------------------------------------------------------------------*/
-.meals .row h3 {
+h3 {
   text-transform: uppercase;
 }
 .meal {
   display: flex;
   flex-wrap: wrap;
-
   margin-bottom: 10px;
 }
 .meal > div {
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
 }
 .Mtext {
   padding: 20px;
@@ -281,8 +285,146 @@ body {
 }
 .Mtext span {
   color: var(--scnd-clr);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 10px;
 }
-.Mtext span a {
-  margin: 0px 7px;
+.Mtext div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .meal > div {
+    width: 100%;
+  }
+  .meal > div:first-child {
+    padding: 10px;
+  }
 }
 /*-------------------------------------------------------------------------*/
+.decor {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.decor span {
+  margin: 5px;
+  display: block;
+  z-index: 2;
+  transform: rotate(45deg);
+  background-color: var(--scnd-clr);
+}
+.decor span.one,
+.decor span.three {
+  width: 5px;
+  height: 5px;
+}
+.decor span.two {
+  width: 10px;
+  height: 10px;
+}
+.decor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(50% - 60px);
+  width: 120px;
+  height: 1px;
+  background-color: var(--scnd-clr);
+  z-index: 1;
+}
+.pizza {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.pizza img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.Ptext {
+  width: 100%;
+  padding: 5px;
+}
+.Ptext p {
+  font-size: 1.1rem;
+}
+.Ptext h5 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.Ptext h5 span {
+  display: block;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.Ptext h5 span.price {
+  color: var(--scnd-clr);
+}
+.Ptext h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  border-bottom: 1px dashed var(--scnd-clr);
+  opacity: 0.5;
+}
+/*-------------------------------------------------------------------------*/
+.gallery .col-md-3 {
+  padding: 0px;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+.gimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 576px) {
+  .gallery .col-md-3 {
+    height: 200px;
+  }
+}
+.gallery .col-md-3 .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 1s ease;
+}
+.gallery .col-md-3 i {
+  padding: 15px;
+  font-size: 1.2rem;
+  position: relative;
+}
+.gallery .col-md-3 i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--scnd-clr);
+  opacity: 0.8;
+  transition: 0.6s ease;
+}
+.gallery .col-md-3:hover .icon {
+  opacity: 1;
+}
+.gallery .col-md-3:hover .icon i::after {
+  transform: rotate(215deg);
+}
+/*------------------------------------------------------------------------*/
