@@ -21,6 +21,7 @@ body {
   transform: translate(0, 0);
   opacity: 1;
 }
+
 /*------------------------------------------------------------------------*/
 .navy {
   background: var(--basic-clr) !important;
@@ -148,6 +149,7 @@ body {
 .order:focus {
   color: var(--scnd-clr);
   background-color: transparent;
+  border: 2px solid var(--scnd-clr);
 }
 .slid-text {
   transform: translateY(30px);
@@ -290,7 +292,8 @@ h3 {
   font-size: 1.05rem;
   line-height: 1.5;
 }
-.Mtext span {
+.Mtext span,
+.Ocards span {
   color: var(--scnd-clr);
   font-weight: bold;
   font-size: 1rem;
@@ -449,7 +452,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
 .counter .row {
@@ -494,5 +497,64 @@ h3 {
 }
 .counter .col-md-6 p {
   font-size: 1.2rem;
+}
+/*------------------------------------------------------------------------*/
+.bttn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.bttn span {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  width: 10% !important;
+}
+
+.bttn span.view {
+  color: var(--scnd-clr);
+  border-color: var(--scnd-clr);
+}
+.bttn span.view:hover {
+  color: var(--basic-clr);
+}
+.Ocards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.Ocards .offr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.Ocards img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.offr h5 {
+  color: var(--scnd-clr);
+}
+@media (max-width: 576px) {
+  .bttn span {
+    width: 100% !important;
+  }
+  .Ocards img {
+    width: 150px;
+    height: 150px;
+    /* margin: 0; */
+  }
 }
 /*------------------------------------------------------------------------*/

@@ -16,6 +16,8 @@ window.addEventListener("scroll", scrolling);
 // To check the scroll position on page load
 scrolling();
 
+// -----------------------------------------------------------------------------
+
 const counters = document.querySelectorAll(".counter .cont");
 const container = document.querySelector(".counter");
 let activated = false;
