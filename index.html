@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bootstrap.min.css" />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./all.min.css" />
-    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +17,8 @@
       src="https://kit.fontawesome.com/e4ff9b392d.js"
       crossorigin="anonymous"
     ></script>
-    <title>Pizza Delicious</title>
-  </head>
+    <title>Pizza Delicious</title></head
+  >s
   <body>
     <!-- header & navigation bar===================== -->
     <header>
@@ -229,7 +229,7 @@
         <div class="col-md-6 p-0 order-2 order-md-1">
           <img class="w-100 h-100" src="./imgs/about.jpg.webp" alt="" />
         </div>
-        <div class="Atext col-md-6 text-white p-5 order-1 order-md-2">
+        <div class="Atext scroll col-md-6 text-white p-5 order-1 order-md-2">
           <h3 class="mb-3">
             WELCOME TO
             <span><i class="fa-solid fa-pizza-slice"></i>PIZZA</span> RESTAURANT
@@ -260,7 +260,7 @@
           </div>
         </div>
         <div class="row p-3">
-          <div class="col-md-4 serv">
+          <div class="col-md-4 serv scroll">
             <div><i class="fa-solid fa-bowl-food"></i></div>
             <h4>Healthy Food</h4>
             <p class="opacity-75">
@@ -268,7 +268,7 @@
               texts it is an almost unorthographic.
             </p>
           </div>
-          <div class="col-md-4 serv">
+          <div class="col-md-4 serv scroll">
             <div><i class="fa-solid fa-truck-fast"></i></div>
             <h4>Fast Delivery</h4>
             <p class="opacity-75">
@@ -276,7 +276,7 @@
               texts it is an almost unorthographic.
             </p>
           </div>
-          <div class="col-md-4 serv">
+          <div class="col-md-4 serv scroll">
             <div><i class="fa-solid fa-pizza-slice"></i></div>
             <h4>Organic Recipes</h4>
             <p class="opacity-75">
@@ -298,7 +298,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row scroll">
         <div class="col-lg-4 col-md-6 meal p-0">
           <div>
             <img class="w-100 h-100" src="./imgs/pizza-0.jpg.webp" alt="" />
@@ -413,7 +413,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row scroll">
         <div class="col-md-6 text-white">
           <div class="pizza">
             <img src="./imgs/pizza-0.jpg.webp" alt="" />
@@ -464,7 +464,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 text-white">
+        <div class="col-md-6 text-white scroll">
           <div class="pizza">
             <img src="./imgs/pizza-5.jpg.webp" alt="" />
             <div class="Ptext">
@@ -546,6 +546,34 @@
       </div>
     </div>
     <!-- counter================================================ -->
+    <section class="counter container-fluid">
+      <div class="row text-white text-center scroll">
+        <div class="col-lg-2 col-md-6">
+          <i class="fa-solid fa-pizza-slice"></i>
+          <div class="cont" data-count="100">0</div>
+          <p>Pizza Branches</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <i class="fa-solid fa-award"></i>
+          <div class="cont" data-count="85">0</div>
+          <p>Number of Awards</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <i class="fa-solid fa-face-smile-beam"></i>
+          <div class="cont" data-count="867">0</div>
+          <p>Happy Customer</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <i class="fa-solid fa-clipboard-user"></i>
+          <div class="cont" data-count="456">0</div>
+          <p>Staff</p>
+        </div>
+      </div>
+    </section>
+    <!-- offers================================================== -->
+
+    <!-- script=============================================== -->
+    <script src="./main.js"></script>
     <script src="./bootstrap.bundle.min.js"></script>
   </body>
 </html>
