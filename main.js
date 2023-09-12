@@ -11,9 +11,7 @@ let scrolling = () => {
     }
   }
 };
-
 window.addEventListener("scroll", scrolling);
-// To check the scroll position on page load
 scrolling();
 
 // -----------------------------------------------------------------------------
@@ -43,13 +41,5 @@ window.addEventListener("scroll", () => {
       updateCount();
       activated = true;
     });
-  } else if (
-    pageYOffset < container.offsetTop - container.offsetHeight - 500 ||
-    (pageXOffset === 0 && activated === true)
-  ) {
-    counters.forEach((counter) => {
-      counter.innerText = 0;
-    });
-    activated = false;
   }
 });
