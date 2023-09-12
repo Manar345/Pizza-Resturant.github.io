@@ -110,7 +110,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 22;
-  line-height: 1.5;
+  line-height: 1.6;
   padding: 15px;
 }
 .subhead {
@@ -130,7 +130,7 @@ body {
 .buttons a {
   display: block;
   padding: 10px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: 0.5s;
 }
 .view {
@@ -230,12 +230,15 @@ body {
   text-align: center;
 }
 .serv div i {
-  padding: 15px;
+  width: 65px;
+  height: 65px;
+  padding-top: 12px;
   font-size: 2.5rem;
   margin: 10px;
   position: relative;
   color: #352c10;
   z-index: 2;
+  text-align: center;
 }
 .serv div i::after {
   content: "";
@@ -247,7 +250,6 @@ body {
   z-index: -1;
   background-color: transparent;
   border: 1px solid rgba(53, 44, 16, 0.5);
-  border-radius: 2px;
   transition: 0.5s ease;
 }
 .serv:hover div i {
@@ -413,6 +415,7 @@ h3 {
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: 1s ease;
+  cursor: pointer;
 }
 .gallery .col-md-3 i {
   padding: 15px;
@@ -464,9 +467,11 @@ h3 {
   padding: 20px 0px;
 }
 .counter i {
+  width: 60px;
+  height: 60px;
   color: var(--scnd-clr);
   font-size: 2.3rem;
-  padding: 15px;
+  padding: 12px;
   margin-bottom: 15px;
   position: relative;
 }
@@ -487,7 +492,7 @@ h3 {
   color: var(--basic-clr);
 }
 .counter .col-md-6:hover i::after {
-  transform: rotate(-135deg);
+  transform: rotate(-215deg);
   background-color: var(--scnd-clr);
 }
 .cont {
@@ -563,12 +568,14 @@ h3 {
 }
 .blog p span {
   opacity: 0.5;
+  cursor: pointer;
 }
 .blog p span:hover {
   opacity: 1;
 }
 .blog h5 {
   transition: 0.5s;
+  cursor: pointer;
 }
 .blog h5:hover {
   color: var(--scnd-clr);
@@ -590,18 +597,24 @@ h3 {
 }
 .contact input[type="text"],
 .contact textarea {
-  background-color: transparent;
-  padding: 10px;
-  border: none;
-  border-radius: 0;
   width: 100%;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  caret-color: var(--scnd-clr);
+  border-radius: 0;
   margin-bottom: 15px;
+  background-color: transparent;
   border-bottom: 0.5px solid rgba(250, 197, 100, 0.3);
+}
+.contact input[type="text"]:focus,
+.contact textarea:focus {
+  outline: none;
 }
 .contact input::placeholder,
 .contact textarea::placeholder {
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 /*-------------------------------------------------------------------------*/
 footer {
@@ -616,6 +629,11 @@ footer {
   border-radius: 50%;
   text-align: center;
   background-color: #000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.iconss i:hover {
+  background-color: #fab638;
 }
 footer h5 {
   text-transform: uppercase;
@@ -647,10 +665,14 @@ footer div a:hover {
 footer .row > div:last-child p {
   display: flex;
   margin: 15px 0px;
+  cursor: pointer;
 }
 footer .row > div:last-child p i {
   padding: 10px;
   font-size: 1.1rem;
   margin-right: 10px;
+}
+footer .row > div:last-child p:hover i {
+  color: var(--scnd-clr);
 }
 /*Done  :)*/
