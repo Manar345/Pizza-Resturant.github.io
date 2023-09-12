@@ -2,6 +2,10 @@
   --basic-clr: #121618;
   --scnd-clr: #ffd43b;
 }
+::selection {
+  background: var(--scnd-clr);
+  color: #000;
+}
 body {
   font-family: "Josefin Sans", Arial, sans-serif !important;
   font-size: 15px;
